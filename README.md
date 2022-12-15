@@ -11,8 +11,9 @@ cd scratch/ZIJIAN/CROPPS_2022_Summer
 ```
 get-node-interactive 
 ```
-- Make download.sh file and Download Data from BioHPC
+- Make download.sh file 
 ```
+vim download.sh
 #!/bin/bash
 wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG_R1.fastq.gz "http://cbsuapps.biohpc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=162668027&refid=985527"
 wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG_R2.fastq.gz "http://cbsuapps.biohpc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=1236375108&refid=985528"
@@ -22,4 +23,8 @@ wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_18N_CTTAATAG_R1.fastq.gz "http
 wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_18N_CTTAATAG_R2.fastq.gz "http://cbsuapps.biohpc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=281761865&refid=985532"
 wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT_R1.fastq.gz "http://cbsuapps.biohpc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=831132020&refid=985533"
 wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT_R2.fastq.gz "http://cbsuapps.biohpc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=169574154&refid=985534"
+```
+- Download Data from BioHPC
+```
+bash download.sh
 ```
