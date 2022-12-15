@@ -7,6 +7,10 @@ To process 2022Summer Metagenomics Data
 ssh discovery
 cd scratch/ZIJIAN/CROPPS_2022_Summer
 ```
+- Get computation node
+```
+get-node-interactive 
+```
 - Make download.sh file and Download Data from BioHPC
 ```
 #!/bin/bash
