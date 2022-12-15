@@ -10,10 +10,12 @@ To process 2022Summer Metagenomics Data.
 ssh discovery
 cd scratch/ZIJIAN/CROPPS_2022_Summer
 ```
+
 - Get computation node
 ```
 get-node-interactive 
 ```
+
 - Make download.sh file 
 ```
 vim download.sh
@@ -27,7 +29,15 @@ wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_18N_CTTAATAG_R2.fastq.gz "http
 wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT_R1.fastq.gz "http://cbsuapps.biohpc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=831132020&refid=985533"
 wget -q -c -O 13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT_R2.fastq.gz "http://cbsuapps.biohpc.cornell.edu/Sequencing/showseqfile.aspx?mode=http&cntrl=169574154&refid=985534"
 ```
+
 - Download Data from BioHPC
 ```
 bash download.sh
 ```
+
+- Extract your data (If error, try redownload your data)
+```
+gunzip *.gz
+```
+
+- 
