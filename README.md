@@ -18,7 +18,7 @@ cd scratch/ZIJIAN/CROPPS_2022_Summer
 ```
 get-node-interactive 
 ```
-
+## Download
 - Make download.sh file 
 ```
 vim download.sh
@@ -43,6 +43,7 @@ bash download.sh
 gunzip *.gz
 ```
 
+## Prepare PE Name
 - Write **get_pari.sh** to get pair file name
 ```
 #!/bin/bash                                                                                                         
@@ -57,6 +58,7 @@ done
 bash get_pari.sh
 ```
 
+## QC & Trim
 - Establish **trim.sh** to submit batch jobs; the results in err file
 ```
 #!/bin/bash
@@ -75,6 +77,7 @@ done
 vim ./err/trimmed/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.err 
 ```
 
+## Assembly
 - Install [SPAdes](https://github.com/ablab/spades)
 ```
 wget http://cab.spbu.ru/files/release3.15.5/SPAdes-3.15.5-Linux.tar.gz
@@ -106,3 +109,6 @@ sbatch --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
  
 done
 ```
+
+## Contigs QC
+- 
