@@ -6,6 +6,7 @@ To process 2022Summer Metagenomics Data.
 - 
 ```
 sq-myjobs # see what jobs is running
+set nu! # vim, hide line number
 ```
 
 - login NEU Clusters to process the data
@@ -103,9 +104,14 @@ log="./log/assemble/${name}.out"
 err="./err/assemble/${name}.err"
 jn="${name}.spades"
  
+if [[ -d $output ]]; then                                                                                                         
+cn=". /home/li.gua/.local/env/python-3.10-venv/bin/activate;~/opt/spades/3.15.5/bin/spades.py --restart-from last -o $output "
+else
 cn=". /home/li.gua/.local/env/python-3.10-venv/bin/activate;~/opt/spades/3.15.5/bin/spades.py --sc --careful -m 196 -k 21,33,55,77 -1 $input1 -2 $input2 -o $output "
+fi
+ 
 echo $output >> assemble.txt
-sbatch --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"                                                                       
+sbatch --time 24:00:00 --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
  
 done
 ```
