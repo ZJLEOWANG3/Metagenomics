@@ -116,5 +116,11 @@ sbatch --time 24:00:00 --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
 done
 ```
 
+- check contigs statistics
+```
+ve-python-3.10
+pip install quast
+```
+
 ## Contigs QC
 - 
