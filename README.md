@@ -104,9 +104,11 @@ log="./log/assemble/${name}.out"
 err="./err/assemble/${name}.err"
 jn="${name}.spades"
  
-if [[ -d $output ]]; then                                                                                                         
+if [[ -d $output ]]; then
+echo "Restart from last"
 cn=". /home/li.gua/.local/env/python-3.10-venv/bin/activate;~/opt/spades/3.15.5/bin/spades.py --restart-from last -o $output "
 else
+echo "No Last Checkpoint, begin from start"
 cn=". /home/li.gua/.local/env/python-3.10-venv/bin/activate;~/opt/spades/3.15.5/bin/spades.py --sc --careful -m 196 -k 21,33,55,77 -1 $input1 -2 $input2 -o $output "
 fi
  
