@@ -41,7 +41,7 @@ bash download.sh
 
 - Save it as a backup
 ```
-tar -czvf CROPPS_2022_Summer.sorting.tar.gz *.fastq
+sbatch --time 24:00:00 -c 8 -J gzip.raw --wrap="tar -czvf CROPPS_2022_Summer.sorting.tar.gz *.fastq"
 mv CROPPS_2022_Summer.sorting.tar.gz /home/li.gua/Downloads/ZIJIAN/CROPPS_2022_Summer.sorting.tar.gz
 ```
 
