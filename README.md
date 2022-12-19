@@ -126,6 +126,12 @@ sbatch --time 24:00:00 --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
 done
 ```
 
+- sanity check by [blastn](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&BLAST_SPEC=GeoBlast&PAGE_TYPE=BlastSearch)
+```
+vim assemble/13697_32712_179493_H5LVWAFX5_CROPPS_18N_CTTAATAG.assembled/contigs.fasta
+# copy some sequences from contigs to blastn for sanity check whether it is meaningful or no significance match
+```
+
 ## Contigs QC
 - check contigs statistics using **quast**
 ```
