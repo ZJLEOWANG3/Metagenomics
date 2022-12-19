@@ -118,15 +118,48 @@ sbatch --time 24:00:00 --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
 done
 ```
 
-- check contigs statistics
-```
-ve-python-3.10
-pip install quast
-```
-
 ## Contigs QC
+- check contigs statistics using **quast**
+```
+#!/bin/bash
+mkdir -p ./quast ./log/quast ./err/quast
+cat pair.identify.txt | while read line
+do
+contigspath="./assemble/${line}.assembled/contigs.fasta"
+output="./quast/${line}.out"
+log="./log/quast/${line}.out"                                                                                                     
+err="./err/quast/${line}.err"
+jn=$line
+cn=". ~/.bashrc; conda activate metagenomics;quast.py $contigspath -o $output"
+sbatch --time 24:00:00 --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
+done
+```
 
+```
+scp -r li.gua@xfer-00.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/quast /Users/zijianleowang/Desktop/NEU_Server
+```
 
+- Filter and simplify name using **anvio**
+```
+conda info --envs
+conda activate anvio-7
+```
+- Using customized script **anvio.filtsimp.sh** to process it
+```
+#!/bin/bash
+dir="anvio/anvio.filtsimp"                                                                                                        
+mkdir -p ./$dir ./log/$dir ./err/$dir
+cat pair.identify.txt | while read line
+do
+contigspath="./assemble/${line}.assembled/contigs.fasta"
+output="./$dir/${line}.fasta"
+log="./log/$dir/${line}.out"
+err="./err/$dir/${line}.err"
+jn=$line
+cn=". ~/.bashrc; conda activate anvio-7;anvi-script-reformat-fasta $contigspath -l 1500 --simplify-names -o $output"
+sbatch --time 24:00:00 --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
+done
+```
 
 ## Binning
 
