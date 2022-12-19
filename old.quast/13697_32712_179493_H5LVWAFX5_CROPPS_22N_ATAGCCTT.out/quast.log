@@ -1,0 +1,41 @@
+/home/li.gua/.conda/envs/metagenomics/bin/quast.py ./assemble/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.assembled/contigs.fasta -o ./quast/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.out
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.25.1.el7.x86_64-x86_64-with-glibc2.10 (linux_64)
+  Python version: 3.8.5
+  CPUs number: 28
+
+Started: 2022-12-17 23:54:16
+
+Logging to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.out/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 7 (use --threads option to set it manually)
+
+CWD: /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer
+Main parameters: 
+  MODE: default, threads: 7, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  ./assemble/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.assembled/contigs.fasta ==> contigs
+
+module 'cgi' has no attribute 'escape'
+Traceback (most recent call last):
+  File "/home/li.gua/.conda/envs/metagenomics/bin/quast.py", line 307, in <module>
+    return_code = main(sys.argv[1:])
+  File "/home/li.gua/.conda/envs/metagenomics/bin/quast.py", line 148, in main
+    from quast_libs import basic_stats
+  File "/home/li.gua/.conda/envs/metagenomics/lib/python3.8/site-packages/quast_libs/basic_stats.py", line 15, in <module>
+    from quast_libs.circos import set_window_size
+  File "/home/li.gua/.conda/envs/metagenomics/lib/python3.8/site-packages/quast_libs/circos.py", line 25, in <module>
+    from quast_libs.icarus_utils import get_assemblies, check_misassembled_blocks, Alignment
+  File "/home/li.gua/.conda/envs/metagenomics/lib/python3.8/site-packages/quast_libs/icarus_utils.py", line 15, in <module>
+    from quast_libs.html_saver.html_saver import trim_ref_name
+  File "/home/li.gua/.conda/envs/metagenomics/lib/python3.8/site-packages/quast_libs/html_saver/html_saver.py", line 18, in <module>
+    from quast_libs.site_packages.jsontemplate import jsontemplate
+  File "/home/li.gua/.conda/envs/metagenomics/lib/python3.8/site-packages/quast_libs/site_packages/jsontemplate/jsontemplate.py", line 583, in <module>
+    'html': cgi.escape,
+AttributeError: module 'cgi' has no attribute 'escape'

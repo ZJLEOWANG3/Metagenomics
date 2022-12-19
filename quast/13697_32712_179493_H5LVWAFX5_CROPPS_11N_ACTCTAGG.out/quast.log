@@ -1,0 +1,67 @@
+/home/li.gua/.conda/envs/metagenomics/bin/quast.py ./assemble/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.assembled/contigs.fasta -o ./quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.25.1.el7.x86_64-x86_64-with-glibc2.10 (linux_64)
+  Python version: 3.8.5
+  CPUs number: 48
+
+Started: 2022-12-18 15:05:53
+
+Logging to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 12 (use --threads option to set it manually)
+
+CWD: /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer
+Main parameters: 
+  MODE: default, threads: 12, minimum contig length: 500, minimum alignment length: 65, \
+  ambiguity: one, threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  ./assemble/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.assembled/contigs.fasta ==> contigs
+
+2022-12-18 15:05:54
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 1152, L50 = 23, Total length = 91081, GC % = 31.76, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/GC_content_plot.pdf
+  Drawing contigs GC content plot...
+    saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/contigs_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 56x)...
+    saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/coverage_histogram.pdf
+  Drawing contigs coverage histogram (bin size: 56x)...
+    saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/contigs_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-12-18 15:05:56
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-12-18 15:05:57
+RESULTS:
+  Text versions of total report are saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/report.html
+  PDF version (tables and plots) is saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/report.pdf
+  Icarus (contig browser) is saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/icarus.html
+  Log is saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/quast.log
+
+Finished: 2022-12-18 15:05:57
+Elapsed time: 0:00:04.006085
+NOTICEs: 3; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
