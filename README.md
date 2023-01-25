@@ -7,12 +7,17 @@ To process 2022Summer Metagenomics Data.
 ## to update **.sh** code
 - link github
 ```
-
+git init
+git add remote origin
+git pull 
+git add .
+git commit -m "update bash scripts"
+git push origin main
 ```
 
 - download
 ```
-scp li.gua@xfer.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/*.sh /Users/zijianleowang/Desktop/GitHub/Metagenomics
+scp li.gua@xfer.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/*.sh /Users/zijianleowang/Desktop/NEU_Server
 
 ```
 ## Some Hint
