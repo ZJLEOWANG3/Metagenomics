@@ -37,6 +37,12 @@ cd scratch/ZIJIAN/CROPPS_2022_Summer
 ```
 get-node-interactive 
 ```
+
+- Check conda environment
+```
+conda info --envs
+```
+
 ## Download
 - Make download.sh file 
 ```
@@ -110,7 +116,6 @@ scp -r li.gua@xfer-00.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_
 
 - Filter and simplify name using **anvio**
 ```
-conda info --envs
 conda activate anvio-7
 ```
 - process it
