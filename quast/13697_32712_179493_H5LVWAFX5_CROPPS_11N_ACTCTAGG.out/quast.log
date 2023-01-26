@@ -7,7 +7,7 @@ System information:
   Python version: 3.8.5
   CPUs number: 48
 
-Started: 2022-12-18 15:05:53
+Started: 2023-01-26 13:54:07
 
 Logging to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/quast.log
 NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
@@ -22,12 +22,12 @@ Contigs:
   Pre-processing...
   ./assemble/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.assembled/contigs.fasta ==> contigs
 
-2022-12-18 15:05:54
+2023-01-26 13:54:14
 Running Basic statistics processor...
   Contig files: 
     contigs
   Calculating N50 and L50...
-    contigs, N50 = 1152, L50 = 23, Total length = 91081, GC % = 31.76, # N's per 100 kbp =  0.00
+    contigs, N50 = 1182, L50 = 18, Total length = 93528, GC % = 31.97, # N's per 100 kbp =  0.00
   Drawing Nx plot...
     saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/Nx_plot.pdf
   Drawing cumulative plot...
@@ -36,22 +36,22 @@ Running Basic statistics processor...
     saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/GC_content_plot.pdf
   Drawing contigs GC content plot...
     saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/contigs_GC_content_plot.pdf
-  Drawing Coverage histogram (bin size: 56x)...
+  Drawing Coverage histogram (bin size: 54x)...
     saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/coverage_histogram.pdf
-  Drawing contigs coverage histogram (bin size: 56x)...
+  Drawing contigs coverage histogram (bin size: 54x)...
     saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/basic_stats/contigs_coverage_histogram.pdf
 Done.
 
 NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
 
-2022-12-18 15:05:56
+2023-01-26 13:54:16
 Creating large visual summaries...
 This may take a while: press Ctrl-C to skip this step..
   1 of 2: Creating Icarus viewers...
   2 of 2: Creating PDF with all tables and plots...
 Done
 
-2022-12-18 15:05:57
+2023-01-26 13:54:18
 RESULTS:
   Text versions of total report are saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/report.txt, report.tsv, and report.tex
   Text versions of transposed total report are saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
@@ -60,8 +60,8 @@ RESULTS:
   Icarus (contig browser) is saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/icarus.html
   Log is saved to /scratch/li.gua/ZIJIAN/CROPPS_2022_Summer/quast/13697_32712_179493_H5LVWAFX5_CROPPS_11N_ACTCTAGG.out/quast.log
 
-Finished: 2022-12-18 15:05:57
-Elapsed time: 0:00:04.006085
+Finished: 2023-01-26 13:54:18
+Elapsed time: 0:00:10.650552
 NOTICEs: 3; WARNINGs: 0; non-fatal ERRORs: 0
 
 Thank you for using QUAST!
