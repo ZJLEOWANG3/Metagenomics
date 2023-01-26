@@ -117,9 +117,6 @@ scp -r li.gua@xfer-00.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_
 - Filter and simplify name using **anvio**
 ```
 conda activate anvio-7
-```
-- process it
-```
 bash anvio.filtsimp.sh
 ```
 
