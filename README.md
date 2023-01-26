@@ -113,6 +113,8 @@ bash quast.sh
 # copy to local and check html files
 scp -r li.gua@xfer-00.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/quast /Users/zijianleowang/Desktop/NEU_Server
 ```
+- The quast report.html looks like below
+![quast report](https://github.com/ZJLEOWANG3/Metagenomics/blob/31123b60c5fe03ea40ed6975f444c2a9c893f583/media/quast.example.png)
 
 - Filter and simplify name using **anvio**
 ```
