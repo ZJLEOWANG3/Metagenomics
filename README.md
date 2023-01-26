@@ -124,7 +124,8 @@ bash anvio.filtsimp.sh # by default, remove contigs length less than 500 bps
 
 - map trimmed reads back to filtered contigs
 ```
-
+bash bowtie2.build.sh # build the reference
+bash bowtie2.sh
 ```
 ## Binning
 
