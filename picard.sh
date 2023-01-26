@@ -2,15 +2,15 @@
 
 cat pair.identify.txt | while read line
 do
-dir="bowtie2/$line"
+dir="picard/$line"
 mkdir -p ./$dir ./log/$dir ./err/$dir
 
-#contigspath="./anvio/anvio.filtsimp/${line}.fasta"
-id="./$dir/${line}.refidx"
+pathin="samtool/$line.bam"
 log="./log/$dir/${line}.out"
 err="./err/$dir/${line}.err"
 jn=$line
 
-cn="~/opt/bowtie/2.4.5/bin/bowtie2 -x $id -1 ${line}_R1.fastq -2 ${line}_R2.fastq -S ${dir}.sam --very-sensitive-local -I 0 -X 500"
+cn="module load oracle_java/jdk1.8.0_181;java -jar ~/Jar/picard.jar MarkDuplicates REMOVE_DUPLICATES=true I=$pathin \
+O=${dir}_rmdup.bam M=${dir}_rmdup_metrics.txt"
 sbatch --time 24:00:00 -c 8 -o $log -e $err -J $jn --wrap="$cn"
 done

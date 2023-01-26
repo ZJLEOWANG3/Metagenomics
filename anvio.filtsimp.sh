@@ -8,6 +8,6 @@ output="./$dir/${line}.fasta"
 log="./log/$dir/${line}.out"
 err="./err/$dir/${line}.err"
 jn=$line
-cn=". ~/.bashrc; conda activate anvio-7;anvi-script-reformat-fasta $contigspath -l 1500 --simplify-names -o $output"
+cn=". ~/.bashrc; conda activate anvio-7;anvi-script-reformat-fasta $contigspath -l 500 --simplify-names -o $output"
 sbatch --time 24:00:00 --mem 196GB -c 8 -o $log -e $err -J $jn --wrap="$cn"
 done
