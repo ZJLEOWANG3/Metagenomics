@@ -18,7 +18,6 @@ git push origin main
 - download
 ```
 scp li.gua@xfer.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/*.sh /Users/zijianleowang/Desktop/NEU_Server
-
 ```
 ## Some Hint
 - Learn Slurm and Sbatch [here](https://slurm.schedmd.com/sbatch.html)
