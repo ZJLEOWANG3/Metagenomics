@@ -120,6 +120,10 @@ conda activate anvio-7
 bash anvio.filtsimp.sh # by default, remove contigs length less than 500 bps
 ```
 
+- map trimmed reads back to filtered contigs
+```
+
+```
 ## Binning
 
 ## Annotation
