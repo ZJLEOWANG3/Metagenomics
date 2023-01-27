@@ -157,10 +157,14 @@ bash samtool.index.sh # to index bam files
 ```
 bash anvio.gen.contigs.db.sh # FASTA files into contigs-db files
 bash anvio.run.hmms.sh # decorate your contigs database with hits from HMM models 
-anvi-setup-ncbi-cogs # !!!!!! run if the below command returned no database in log files
+sbatch --time 24:00:00 -c 16 -J db --wrap=". ~/.bashrc; conda activate anvio-7; anvi-setup-ncbi-cogs -T 16 --just-do-it" # !!!!!! run if the below command returned no database in log files
 bash anvio.run.ncbi.cogs.sh # annotate genes in your contigs-db with functions from the NCBI’s Clusters of Orthologus Groups
-
 ```
+- Profiling BAM files by [official tutorial](https://merenlab.org/2016/06/22/anvio-tutorial-v2/#profiling-bam-files)
+```
+bash anvio.profile.sh # default min contigs length is 500
+```
+
 [ORF](https://www.genome.gov/genetics-glossary/Open-Reading-Frame)
 
 ## Binning
