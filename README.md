@@ -95,6 +95,12 @@ kaiju.sh
 ```
 kaiju.table.sh
 ```
+- download
+```
+mkdir ~/Desktop/NEU_Server/kaiju
+scp li.gua@xfer.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/kaiju/*.tsv /Users/zijianleowang/Desktop/NEU_Server/kaiju/
+```
+
 ## QC & Trim
 ```
 bash trim.sh
