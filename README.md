@@ -126,6 +126,15 @@ bash anvio.filtsimp.sh # by default, remove contigs length less than 500 bps
 bash bowtie2.build.sh # build the reference
 bash bowtie2.sh # by default -X 1000 for maximum length fragment
 ```
+
+- downstream mapping processing
+```
+bash samtool.view.sh
+bash samtool.sort.sh
+bash picard.sh # remove duplicates
+bash samtool.index.sh # to index bam files
+```
+
 ## Binning
 
 ## Annotation
