@@ -79,6 +79,22 @@ gunzip *.gz
 bash get_pari.sh
 ```
 
+## Sanity Check by [Kaiju](https://github.com/bioinformatics-centre/kaiju)
+- install by release in the righthand side of github page
+- make database
+```
+mkdir kaijudb
+cd kaijudb
+~/opt/kaiju/1.9.1/bin/kaiju-makedb -s <DB> # <DB> we choose refseq
+```
+- run kaiju
+```
+kaiju.sh
+```
+- transform to human-readable table
+```
+kaiju.table.sh
+```
 ## QC & Trim
 ```
 bash trim.sh
