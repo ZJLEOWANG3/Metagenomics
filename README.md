@@ -174,8 +174,9 @@ bash anvio.cluster.contigs.sh # by default, using 500 length and
 - Visualize
 ```
 # at one server window
-anvi-interactive -p anvio/anvio.profile/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db/PROFILE_merged/PROFILE.db -c anvio/anvio.gen.contigs.db/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db --server-only -P 8080 --show-all-layers -C CONCOCT
-
+anvi-interactive -p anvio/anvio.profile/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db/PROFILE_merged/PROFILE.db -c anvio/anvio.gen.contigs.db/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db --server-only -P 8080 --show-all-layers -C concoct
+```
+```
 # at another server window
 ssh -L8080:localhost:8080 c2003
 ```
