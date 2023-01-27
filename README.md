@@ -95,7 +95,10 @@ kaiju.sh
 ```
 kaiju.table.sh
 ```
-- download
+- check results
+![kaiju example](https://github.com/ZJLEOWANG3/Metagenomics/blob/fe3c4253c169def9f10e3d220f04a06298d7c8ee/media/kaiju.example.png)
+
+- download to local
 ```
 mkdir ~/Desktop/NEU_Server/kaiju
 scp li.gua@xfer.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/kaiju/*.tsv /Users/zijianleowang/Desktop/NEU_Server/kaiju/
