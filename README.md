@@ -151,7 +151,7 @@ bash picard.sh # remove duplicates
 bash samtool.index.sh # to index bam files
 ```
 
-## Annotation
+## Binning
 - Create Anvio Contigs Database by [official tutorial](https://merenlab.org/2016/06/22/anvio-tutorial-v2/#anvi-gen-contigs-database)
 ```
 bash anvio.gen.contigs.db.sh # FASTA files into contigs-db files
@@ -161,7 +161,19 @@ bash anvio.run.ncbi.cogs.sh # annotate genes in your contigs-db with functions f
 ```
 - Profiling BAM files by [official tutorial](https://merenlab.org/2016/06/22/anvio-tutorial-v2/#profiling-bam-files)
 ```
-bash anvio.profile.sh # default min contigs length is 500
+bash anvio.profile.sh # default min contigs length is 500, --cluster-contigs is used for single-profiling
+```
+- Binning
+```
+bash anvio.cluster.contigs.sh # by default, using 500 length and CONCOCT
+```
+- Visualize
+```
+anvi-interactive -p anvio/anvio.profile/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db/PROFILE.db -c anvio/anvio.gen.contigs.db/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db --server-only -P 8080 --show-all-layers --list-collections
+
+-C CONCOCT
+
+ssh -L8080:localhost:8080 c2003
 ```
 
 [ORF](https://www.genome.gov/genetics-glossary/Open-Reading-Frame)
