@@ -199,6 +199,11 @@ anvi-interactive -p anvio/anvio.profile/13697_32712_179493_H5LVWAFX5_CROPPS_22N_
 ssh disocvery
 ssh -L 8080:localhost:8080 $node_name_of_above
 ```
+- Check in local
+```
+http://localhost:8080/ # google
+# click draw
+```
 
 - Example Anvio Binning
 ![Anvio-interact Bin](https://github.com/ZJLEOWANG3/Metagenomics/blob/aaf1032d3d052239f2985bb3898cc81403eaa5ce/media/anvio_interac.png)
