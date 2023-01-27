@@ -148,7 +148,6 @@ bash bowtie2.sh # by default -X 1000 for maximum length fragment
 bash samtool.view.sh
 bash samtool.sort.sh
 bash picard.sh # remove duplicates
-
 bash samtool.index.sh # to index bam files
 ```
 
