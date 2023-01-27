@@ -193,12 +193,15 @@ conda activate anvio-7
 cd scratch/ZIJIAN/CROPPS_2022_Summer/
 anvi-interactive -p anvio/anvio.profile/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db/PROFILE_merged/PROFILE.db -c anvio/anvio.gen.contigs.db/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db --server-only -P 8080 --show-all-layers -C concoct
 ```
+
 ```
 # at another server window
 ssh disocvery
 ssh -L 8080:localhost:8080 $node_name_of_above
 ```
 
+- Example Anvio Binning
+![Anvio-interact Bin](https://github.com/ZJLEOWANG3/Metagenomics/blob/aaf1032d3d052239f2985bb3898cc81403eaa5ce/media/anvio_interac.png)
 
 [ORF](https://www.genome.gov/genetics-glossary/Open-Reading-Frame)
 
