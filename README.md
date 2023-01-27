@@ -173,15 +173,23 @@ bash anvio.cluster.contigs.sh # by default, using 500 length and
 ```
 - Visualize
 ```
+# connect first window
+ssh -L 8080:localhost:8080 discovery
+```
+
+```
 # at one server window
+get-node-interactive
 conda activate anvio-7
 cd scratch/ZIJIAN/CROPPS_2022_Summer/
 anvi-interactive -p anvio/anvio.profile/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db/PROFILE_merged/PROFILE.db -c anvio/anvio.gen.contigs.db/13697_32712_179493_H5LVWAFX5_CROPPS_22N_ATAGCCTT.db --server-only -P 8080 --show-all-layers -C concoct
 ```
 ```
 # at another server window
-ssh -L8080:localhost:8080 c2003
+ssh disocvery
+ssh -L 8080:localhost:8080 $node_name_of_above
 ```
+
 
 [ORF](https://www.genome.gov/genetics-glossary/Open-Reading-Frame)
 
