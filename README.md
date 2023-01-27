@@ -161,12 +161,12 @@ bash anvio.run.ncbi.cogs.sh # annotate genes in your contigs-db with functions f
 ```
 - Profiling BAM files by [official tutorial](https://merenlab.org/2016/06/22/anvio-tutorial-v2/#profiling-bam-files)
 ```
-bash anvio.profile.sh # default min contigs length is 500, --cluster-contigs is used for single-profiling
+bash anvio.profile.sh # default min contigs length is 500
 ```
 - Binning
 ```
 bash anvio.merge.sh # merge profile db
-bash anvio.cluster.contigs.sh # by default, using 500 length and CONCOCT
+bash anvio.cluster.contigs.sh # by default, using 500 length and 
 ```
 - Visualize
 ```
