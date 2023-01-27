@@ -148,10 +148,19 @@ bash bowtie2.sh # by default -X 1000 for maximum length fragment
 bash samtool.view.sh
 bash samtool.sort.sh
 bash picard.sh # remove duplicates
+
 bash samtool.index.sh # to index bam files
 ```
 
-## Binning
-
 ## Annotation
+- Create Anvio Contigs Database by [official tutorial](https://merenlab.org/2016/06/22/anvio-tutorial-v2/#anvi-gen-contigs-database)
+```
+bash anvio.gen.contigs.db.sh # FASTA files into contigs-db files
+bash anvio.run.hmms.sh # decorate your contigs database with hits from HMM models 
+anvi-setup-ncbi-cogs # !!!!!! run if the below command returned no database in log files
+bash anvio.run.ncbi.cogs.sh # annotate genes in your contigs-db with functions from the NCBI’s Clusters of Orthologus Groups
+
+```
 [ORF](https://www.genome.gov/genetics-glossary/Open-Reading-Frame)
+
+## Binning
