@@ -166,6 +166,9 @@ bash anvio.profile.sh # default min contigs length is 500
 - Binning
 ```
 bash anvio.merge.sh # merge profile db
+# to run below successfully, we need to edit python script
+# vim /home/li.gua/.local/env/python-3.10.4-2023-01-27-venv-anvio-7/lib/python3.10/site-packages/sklearn/utils/validation.py
+# change line 1894 to feature_names = np.asarray(X.columns**.astype(str)**, dtype=object) because it requires col name all be string type
 bash anvio.cluster.contigs.sh # by default, using 500 length and 
 ```
 - Visualize
