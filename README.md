@@ -196,7 +196,7 @@ anvi-interactive -p anvio/anvio.profile/13697_32712_179493_H5LVWAFX5_CROPPS_22N_
 
 ```
 # at another server window
-ssh disocvery
+ssh discovery
 ssh -L 8080:localhost:8080 $node_name_of_above
 ```
 - Check in local
