@@ -4,17 +4,6 @@ To process 2022Summer Metagenomics Data.
 - The sequences are in fastq format. The fastq file may contain both "filtered" and "not filtered" reads, depending on the instrument used. Files from the NextSeq500 contain only "not filtered" reads, i.e. reads that pass Illumina's Chastity filter. The pass filter status is indicated by a flag (Y/N) in the sequence header for each read. "Y" in the header means the read is filtered (out), i.e. flagged as low quality.
 - Base quality scores are in Sanger FASTQ format (the offest is ASCII 33).
 
-## to update **.sh** code
-- link github
-```
-git init
-git add remote origin
-git pull 
-git add .
-git commit -m "update bash scripts"
-git push origin main
-```
-
 - download
 ```
 scp li.gua@xfer.discovery.neu.edu:/home/li.gua/scratch/ZIJIAN/CROPPS_2022_Summer/*.sh /Users/zijianleowang/Desktop/NEU_Server
